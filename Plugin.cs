@@ -31,8 +31,8 @@ namespace NO_Jamming_Edits
         internal static AudioClip newSound = null;
         internal static bool soundReplaced = false;
 
-        internal static Image jam_icon = null;
-        internal static bool iconReplaced = true;
+        internal static bool iconRainbow = true;
+
         void Awake()
         {
             if (Instance == null)
@@ -118,7 +118,7 @@ namespace NO_Jamming_Edits
             if (extension == ".mp3")
                 return AudioType.MPEG;
 
-            mls.LogError($"Unsupported extension: {path}");
+            //mls.LogError($"Unsupported extension: {path}");
             return AudioType.UNKNOWN;
         }
 
